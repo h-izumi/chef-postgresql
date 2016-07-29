@@ -5,6 +5,16 @@
 # PostgreSQL 9.2, 9.3 and 9.4 are captured below.
 #
 default['postgresql']['pgdg']['repo_rpm_url'] = {
+  "9.5" => {
+    "centos" => {
+      "7" => {
+        "x86_64" => {
+          "url" => "http://yum.postgresql.org/9.5/redhat/rhel-7-x86_64/",
+          "package" => "pgdg-centos95-9.5-2.noarch.rpm"
+        }
+      },
+    },
+  },
   "9.4" => {
     "redhat" => {
       "7" => {
